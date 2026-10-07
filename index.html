@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0F1020" />
+  <meta name="robots" content="noindex" />
+  <title>App Studio Test Site</title>
+  <style>
+    :root {
+      --bg: #0F1020;
+      --surface: #1B1D36;
+      --surface-alt: #262A4A;
+      --text: #F5F6FF;
+      --muted: #9EA3C7;
+      --accent: #FFC845;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.45;
+    }
+    main { max-width: 760px; margin: 0 auto; padding: 32px 16px 48px; }
+    h1 { font-size: 34px; font-weight: 900; letter-spacing: -0.5px; margin: 0 0 6px; }
+    .lead { color: var(--muted); margin: 0 0 20px; font-size: 16px; }
+    .note {
+      background: var(--surface);
+      border: 1px solid var(--surface-alt);
+      border-radius: 16px;
+      padding: 14px 16px;
+      margin-bottom: 24px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .note strong { color: var(--text); }
+    .note ul { margin: 6px 0 0; padding-left: 18px; }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
+    @media (min-width: 600px) { .grid { grid-template-columns: 1fr 1fr; } }
+    a.card {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      background: var(--surface);
+      border-radius: 16px;
+      padding: 16px;
+      color: inherit;
+      text-decoration: none;
+      border: 2px solid transparent;
+      transition: border-color 0.15s;
+    }
+    a.card:hover, a.card:focus-visible { border-color: var(--accent); outline: none; }
+    .emoji { font-size: 32px; line-height: 1; flex-shrink: 0; }
+    .card h2 { font-size: 18px; font-weight: 800; margin: 0 0 4px; }
+    .card p { margin: 0 0 8px; color: var(--muted); font-size: 14px; }
+    .play { color: var(--accent); font-weight: 800; font-size: 14px; }
+    footer { color: var(--muted); font-size: 13px; margin-top: 28px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>App Studio</h1>
+    <p class="lead">Test versions of six apps. Tap one to play. They work on a phone or a computer.</p>
+
+    <div class="note">
+      <strong>This is test mode.</strong>
+      <ul>
+        <li>Pro unlocks for free. Nothing is ever charged.</li>
+        <li>Gray "Ad" boxes show where real ads will go.</li>
+        <li>Doodle Duel's AI is simulated here.</li>
+        <li>Scores and Pro are saved in this browser only.</li>
+      </ul>
+    </div>
+
+    <div class="grid">
+      <a class="card" href="higher-or-lower/">
+        <span class="emoji" aria-hidden="true">⬆️</span>
+        <span>
+          <h2>Higher or Lower</h2>
+          <p>Guess which is bigger: countries, skyscrapers, mountains, speeds and brands.</p>
+          <span class="play">Play →</span>
+        </span>
+      </a>
+      <a class="card" href="timeline-game/">
+        <span class="emoji" aria-hidden="true">⏳</span>
+        <span>
+          <h2>Timeline</h2>
+          <p>Put history in order, one event at a time. New daily challenge every day.</p>
+          <span class="play">Play →</span>
+        </span>
+      </a>
+      <a class="card" href="flag-quest/">
+        <span class="emoji" aria-hidden="true">🇯🇵</span>
+        <span>
+          <h2>Flag Quest</h2>
+          <p>Flags and capitals of 161 countries, with a daily 10.</p>
+          <span class="play">Play →</span>
+        </span>
+      </a>
+      <a class="card" href="real-or-ai/">
+        <span class="emoji" aria-hidden="true">🤖</span>
+        <span>
+          <h2>Real or AI?</h2>
+          <p>Famous quote or AI fake? Swipe right for real, left for AI.</p>
+          <span class="play">Play →</span>
+        </span>
+      </a>
+      <a class="card" href="split-it/">
+        <span class="emoji" aria-hidden="true">🧾</span>
+        <span>
+          <h2>Split It</h2>
+          <p>Split a restaurant bill by item, with tax and tip shared fairly.</p>
+          <span class="play">Open →</span>
+        </span>
+      </a>
+      <a class="card" href="doodle-duel/">
+        <span class="emoji" aria-hidden="true">✏️</span>
+        <span>
+          <h2>Doodle Duel</h2>
+          <p>You draw, the AI guesses. Beat the 25-second clock.</p>
+          <span class="play">Play →</span>
+        </span>
+      </a>
+    </div>
+
+    <footer>
+      On iPhone, tap Share, then Add to Home Screen, to keep this page one tap away.
+    </footer>
+  </main>
+</body>
+</html>
